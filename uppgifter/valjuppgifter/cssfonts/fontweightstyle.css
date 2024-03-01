@@ -1,0 +1,50 @@
+body
+{
+    background-color: rgb(114,188,227);
+}
+.fontone
+{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 70px;
+    background-image: linear-gradient(to top, blue, rgb(114,188,227));
+    box-shadow: 5px 5px black;
+}
+.fonttwo
+{
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+    background-image: linear-gradient(to top, blue, rgb(114,188,227));
+    box-shadow: 5px 5px black;
+}
+.fontthree
+{
+    background-color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 80px;
+    background-image: linear-gradient(to top, blue, rgb(114,188,227));
+    box-shadow: 5px 5px black;
+}
+.boxfour
+{
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 40px;
+    background-image: linear-gradient(to top, blue, rgb(114,188,227));
+    box-shadow: 5px 5px black;
+}

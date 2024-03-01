@@ -1,0 +1,28 @@
+body
+{
+    background-color: #e643ff;
+}
+.boxone
+{
+    margin: 40px;
+    background-color: #bc36d1;
+    width: 200px;
+    height: 60px;
+}
+.boxtwo
+{
+    background-color: #9029a0;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 60px;
+}
+.boxthree
+{
+    background-color:#621b6d;
+    margin: 30px;
+    padding: 30px;
+    width: 200px;
+    height: 50px;
+    border: 7px solid #842593;
+}
