@@ -2,10 +2,12 @@ body
 {
     background-color: rgb(114,188,227);
 }
-.fontone
+.fontthree
 {
     background-color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     
     margin: 20px;
     padding: 20px;
@@ -17,46 +19,30 @@ body
 .fonttwo
 {
     background-color: blue;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     
     margin: 20px;
     padding: 20px;
     width: 300px;
-    height: 150px;
+    height: 70px;
     background-image: linear-gradient(to top, blue, rgb(114,188,227));
     box-shadow: 5px 5px black;
 }
-.fontthree
+.fontone
 {
     background-color: blue;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Lumanosimo", cursive;
+    font-weight: 400;
+    font-style: normal;
     
     margin: 20px;
     padding: 20px;
     width: 300px;
-    height: 80px;
+    height: 100px;
     background-image: linear-gradient(to top, blue, rgb(114,188,227));
     box-shadow: 5px 5px black;
-}
-.boxfour
-{
-    background-color: blue;
-    margin: 20px;
-    padding: 20px;
-    width: 300px;
-    height: 40px;
-    background-image: linear-gradient(to top, blue, rgb(114,188,227));
-    box-shadow: 5px 5px black;
-}
-.lighter
-{
-    font-weight: lighter;
-}
-.bold
-{
-    font-weight: bold;
-}
-.bolder
-{
-    font-weight: bolder;
 }
