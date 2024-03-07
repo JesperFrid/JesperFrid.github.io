@@ -10,10 +10,12 @@ body
     font-weight: 400;
     font-style: normal;
     
+    color: coral;
+    text-shadow: 0 0 10px #00ff00;
     margin: 20px;
     padding: 20px;
-    width: 300px;
-    height: 100px;
+    width: 600px;
+    height: fit-content;
     background-image: linear-gradient(to top, rgb(79, 79, 255), rgb(114,188,227));
     box-shadow: 5px 5px black;
 }
@@ -24,10 +26,11 @@ body
     font-weight: 400;
     font-style: normal;
     
+    text-shadow: 4px 4px 4px #666666;
     margin: 20px;
     padding: 20px;
-    width: 300px;
-    height: 100px;
+    width: 600px;
+    height: fit-content;
     background-image: linear-gradient(to top, rgb(79, 79, 255), rgb(114,188,227));
     box-shadow: 5px 5px black;
 }
@@ -42,8 +45,8 @@ body
     text-shadow: 1px 1px 2px black, 0 0 20px blue,0 0 7px darkblue;
     margin: 20px;
     padding: 20px;
-    width: 500px;
-    height: 100px;
+    width: 600px;
+    height: fit-content;
     background-image: linear-gradient(to top, rgb(79, 79, 255), rgb(114,188,227));
     box-shadow: 5px 5px black;
 }

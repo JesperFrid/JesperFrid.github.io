@@ -1,0 +1,12 @@
+body
+{
+    background-color: rgb(114,188,227);
+}
+img
+{
+    border-radius: 5px;
+}
+img:hover
+{
+    box-shadow: 0 0 2px 1px rgb(17, 115, 168);
+}

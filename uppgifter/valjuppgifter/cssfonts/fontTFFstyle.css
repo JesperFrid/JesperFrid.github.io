@@ -1,0 +1,38 @@
+@font-face 
+{
+    font-family:Splatfont;
+    src: url(Splatfont2.ttf);
+}
+@font-face 
+{
+    font-family:myRoboto;
+    src: url(Roboto-Regular.ttf);
+}
+body
+{
+    background-color: rgb(114,188,227);
+}
+.boxone
+{
+    background-color: rgb(79, 79, 255);
+    font-family: Splatfont, helvetica;
+    
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
+    height: fit-content;
+    background-image: linear-gradient(to top, rgb(79, 79, 255), rgb(114,188,227));
+    box-shadow: 5px 5px black;
+}
+.boxtwo
+{
+    background-color: rgb(79, 79, 255);
+    font-family: myRoboto, helvetica;
+    
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
+    height: fit-content;
+    background-image: linear-gradient(to top, rgb(79, 79, 255), rgb(114,188,227));
+    box-shadow: 5px 5px black;
+}
