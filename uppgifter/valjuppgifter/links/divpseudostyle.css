@@ -1,0 +1,47 @@
+@font-face 
+{
+    font-family:Splatfont;
+    src: url(Splatfont2.ttf);
+}
+body
+{
+    background-color: black;
+    font-family: Splatfont;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+div:hover
+{
+    background-color: blue;
+}
+div:focus
+{
+    color: lightblue;
+}
+.default
+{
+    border-radius: 1em;
+    width: 7.5em;
+    height: 5em;
+    border-color: white;
+    border-style: solid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.focus
+{
+    border-radius: 1em;
+    width: 7.5em;
+    height: 5em;
+    border-color: white;
+    border-style: solid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
