@@ -1,0 +1,23 @@
+body
+{
+    background-color: rgb(114,188,227);
+}
+a
+{
+    display: block;
+    background-color: rgb(127, 127, 241);
+    border-radius: 0.5em;
+    width: 15em;
+    height: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-left: ridge blue;
+    color: lightblue;
+}
+a:hover
+{
+    background-color: darkblue;
+}

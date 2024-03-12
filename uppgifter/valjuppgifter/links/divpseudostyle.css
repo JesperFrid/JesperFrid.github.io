@@ -13,13 +13,23 @@ a
     color: white;
     text-decoration: none;
 }
-div:hover
+a:focus
 {
     background-color: blue;
+    border-radius: 1em;
+    border-style: solid;
 }
-div:focus
+a:hover
 {
     color: lightblue;
+}
+a
+{
+    width: 7.5em;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .default
 {
@@ -32,16 +42,9 @@ div:focus
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-bottom: 1em;
 }
-.focus
+#rubrik
 {
-    border-radius: 1em;
-    width: 7.5em;
-    height: 5em;
-    border-color: white;
-    border-style: solid;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    color: white;
 }
