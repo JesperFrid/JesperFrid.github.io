@@ -4,5 +4,9 @@ body
 }
 .text
 {
-    width: 10em;
+    width: 27em;
+}
+a
+{
+    margin-right: 2em;
 }

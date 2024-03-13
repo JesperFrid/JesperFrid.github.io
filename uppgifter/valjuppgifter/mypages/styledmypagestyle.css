@@ -1,0 +1,99 @@
+body
+{
+    background-color: rgb(114,188,227);
+}
+.div1
+{
+    float: left;
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    padding-bottom: 0.2em;
+    margin-right: 2em;
+    box-shadow: 0.5em 0.5em black;
+}
+.div2
+{
+    float: left;
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    padding-bottom: 10.5em;
+    margin-right: 2em;
+    box-shadow: 0.5em 0.5em black;
+}
+.div3
+{
+    float: left;
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    padding-bottom: 5.35em;
+    margin-right: 2em;
+    box-shadow: 0.5em 0.5em black;
+}
+.div4
+{
+    float: left;
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    padding-bottom: 13.1em;
+    margin-right: 2em;
+    box-shadow: 0.5em 0.5em black;
+}
+.div5
+{
+    float: left;
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    padding-bottom: 10.5em;
+    margin-right: 2em;
+    box-shadow: 0.5em 0.5em black;
+}
+.div6
+{
+    float: left;
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    padding-bottom: 5.5em;
+    box-shadow: 0.5em 0.5em black;
+}
+.div7
+{
+    float: left;
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    padding-bottom: 0.2em;
+    margin-right: 2em;
+    margin-top: 2em;
+    box-shadow: 0.5em 0.5em black;
+}
+a
+{
+    border-radius: 1em;
+    border-style: solid;
+    width: 10em;
+    margin-bottom: 0.2em;
+    height: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    text-decoration: none;
+}
+h2
+{
+    text-align: center;
+}
+a:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 2px 2px black;
+}
+a:active
+{
+    box-shadow: none;
+    position: relative;
+    top: 3px;
+}
