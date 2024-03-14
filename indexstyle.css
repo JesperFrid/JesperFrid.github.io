@@ -5,8 +5,45 @@ body
 img
 {
     border-radius: 5px;
+    text-align: left;
 }
 img:hover
 {
     box-shadow: 0 0 2px 1px rgb(17, 115, 168);
+}
+.div1
+{
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    padding-bottom: 0.2em;
+    box-shadow: 0.5em 0.5em black;
+    padding-top: 0.2em;
+}
+.links
+{
+    border-radius: 1em;
+    border-style: solid;
+    width: 10em;
+    margin-bottom: 0.2em;
+    height: 2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    text-decoration: none;
+}
+.links:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 2px 2px black;
+}
+.links:active
+{
+    box-shadow: none;
+    position: relative;
+    top: 3px;
 }
