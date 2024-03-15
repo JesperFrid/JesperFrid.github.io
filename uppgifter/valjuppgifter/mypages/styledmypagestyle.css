@@ -7,7 +7,7 @@ body
     float: left;
     background-color: rgb(13, 167, 250);
     width: 12em;
-    padding-bottom: 0.2em;
+    height: 32.7em;
     margin-right: 2em;
     box-shadow: 0.5em 0.5em black;
 }
@@ -16,7 +16,7 @@ body
     float: left;
     background-color: rgb(13, 167, 250);
     width: 12em;
-    padding-bottom: 10.5em;
+    height: 32.7em;
     margin-right: 2em;
     box-shadow: 0.5em 0.5em black;
 }
@@ -25,7 +25,7 @@ body
     float: left;
     background-color: rgb(13, 167, 250);
     width: 12em;
-    padding-bottom: 5.35em;
+    height: 32.7em;
     margin-right: 2em;
     box-shadow: 0.5em 0.5em black;
 }
@@ -34,7 +34,7 @@ body
     float: left;
     background-color: rgb(13, 167, 250);
     width: 12em;
-    padding-bottom: 13.1em;
+    height: 32.7em;
     margin-right: 2em;
     box-shadow: 0.5em 0.5em black;
 }
@@ -43,7 +43,7 @@ body
     float: left;
     background-color: rgb(13, 167, 250);
     width: 12em;
-    padding-bottom: 10.5em;
+    height: 32.7em;
     margin-right: 2em;
     box-shadow: 0.5em 0.5em black;
 }
@@ -52,7 +52,7 @@ body
     float: left;
     background-color: rgb(13, 167, 250);
     width: 12em;
-    padding-bottom: 5.5em;
+    height: 32.7em;
     box-shadow: 0.5em 0.5em black;
 }
 .div7
@@ -60,7 +60,17 @@ body
     float: left;
     background-color: rgb(13, 167, 250);
     width: 12em;
-    padding-bottom: 0.2em;
+    height: 32.7em;
+    margin-right: 2em;
+    margin-top: 2em;
+    box-shadow: 0.5em 0.5em black;
+}
+.div8
+{
+    float: left;
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    height: 32.7em;
     margin-right: 2em;
     margin-top: 2em;
     box-shadow: 0.5em 0.5em black;
