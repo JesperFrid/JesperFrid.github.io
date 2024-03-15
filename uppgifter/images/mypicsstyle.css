@@ -1,0 +1,22 @@
+body
+{
+    background-color: rgb(114,188,227);
+}
+img
+{
+    border-style: solid;
+    float: left;
+    box-shadow: 0.5em 0.5em black;
+}
+.img1
+{
+    border-color: #4c7442;
+}
+.img2
+{
+    border-color: #82bd5a;
+}
+.img3
+{
+    border-color: #d6476f;
+}
