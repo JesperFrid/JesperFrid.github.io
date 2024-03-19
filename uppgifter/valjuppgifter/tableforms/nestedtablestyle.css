@@ -1,0 +1,29 @@
+body
+{
+    background-color: rgb(114,188,227);
+}
+.tablebig
+{
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 5px 5px black;
+    height: fit-content;
+    width: 40em;
+    text-align: center;
+    border-collapse: collapse;
+}
+td
+{
+    border: 1px solid blue;
+    padding: 2.5em;
+}
+.tablenested
+{
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 5px 5px black;
+    height: fit-content;
+    width: 20em;
+    text-align: center;
+    border-collapse: collapse;
+}
