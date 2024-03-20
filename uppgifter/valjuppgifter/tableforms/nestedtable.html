@@ -9,7 +9,9 @@
 </head>
 
 <body>
+    <h1>Nästlad tabell</h1>
     <table class="tablebig">
+        <caption>Fruit/month</caption>
         <thead>
             <tr>
                 <td>January</td>
@@ -19,9 +21,8 @@
         </thead>
         <tbody>
             <tr>
-                <td>
+                <td class="bigtd">
                     <table class="tablenested">
-                        <caption>Fruits</caption>
                         <thead>
                             <tr>
                                 <td>S.N</td>
@@ -54,9 +55,8 @@
                         </tfoot>
                     </table>
                 </td>
-                <td>
+                <td class="bigtd">
                     <table class="tablenested">
-                        <caption>Fruits</caption>
                         <thead>
                             <tr>
                                 <td>S.N</td>
@@ -89,9 +89,8 @@
                         </tfoot>
                     </table>
                 </td>
-                <td>
+                <td class="bigtd">
                     <table class="tablenested">
-                        <caption>Fruits</caption>
                         <thead>
                             <tr>
                                 <td>S.N</td>
@@ -126,6 +125,12 @@
                 </td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>25</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 

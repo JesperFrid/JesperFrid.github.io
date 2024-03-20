@@ -12,18 +12,23 @@ body
     text-align: center;
     border-collapse: collapse;
 }
-td
+.bigtd
 {
     border: 1px solid blue;
     padding: 2.5em;
+    height: 19em;
+}
+td
+{
+    border: 1px solid blue;
 }
 .tablenested
 {
     border-style: solid;
     border-color: blue;
     box-shadow: 5px 5px black;
-    height: fit-content;
-    width: 20em;
+    height: 10em;
+    width: 15em;
     text-align: center;
     border-collapse: collapse;
 }
