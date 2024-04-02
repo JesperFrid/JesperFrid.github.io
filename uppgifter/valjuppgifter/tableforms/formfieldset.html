@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formfieldsetstyle.css" type="text/css">
+</head>
+<body>
+<h1>Form with fieldsets</h1>
+<fieldset>
+    <legend>Login</legend>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Gender*</legend>
+    <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+    </div>
+    <div>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Programming Skill</legend>
+    <div>
+        <label for="java">Java</label>
+        <input type="checkbox" name="java" id="java">
+    </div>
+    <div>
+        <label for="c++">C++</label>
+        <input type="checkbox" name="cplusplus" id="cplusplus">
+    </div>
+    <div>
+        <label for="c#">C#</label>
+        <input type="checkbox" name="csharp" id="csharp">
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Fruit</legend>
+    <div>
+        <label for="fruit">Choose a fruit:</label>
+        <select name="fruit" id="fruit">
+            <option value="banana">Banana</option>
+            <option value="apple">Apple</option>
+            <option value="pear">Pear</option>
+        </select>
+    </div>
+</fieldset>
+</body>
+</html>

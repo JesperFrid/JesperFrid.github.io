@@ -4,5 +4,10 @@ body
 }
 div
 {
-    display: inline;
+    margin-bottom: 2em;
+}
+form input
+{
+    float: right;
+    
 }

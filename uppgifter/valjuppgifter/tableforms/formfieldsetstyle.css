@@ -1,0 +1,21 @@
+body
+{
+    background-color: rgb(114,188,227);
+}
+fieldset
+{
+    width: 30em;
+}
+legend
+{
+    background-color: #d93df1;
+    width: 10em;
+}
+input
+{
+    float: right;
+}
+div
+{
+    margin: 1em;
+}
