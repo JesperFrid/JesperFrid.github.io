@@ -75,6 +75,16 @@ body
     margin-top: 2em;
     box-shadow: 0.5em 0.5em black;
 }
+.div9
+{
+    float: left;
+    background-color: rgb(13, 167, 250);
+    width: 12em;
+    height: 32.7em;
+    margin-right: 2em;
+    margin-top: 2em;
+    box-shadow: 0.5em 0.5em black;
+}
 a
 {
     border-radius: 1em;

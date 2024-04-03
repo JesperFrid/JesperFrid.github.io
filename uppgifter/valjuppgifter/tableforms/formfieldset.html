@@ -8,14 +8,15 @@
 </head>
 <body>
 <h1>Form with fieldsets</h1>
+<form>
 <fieldset>
     <legend>Login</legend>
     <div>
-        <label for="username">Username:</label>
+        <label for="username">Username:*</label>
         <input type="text" name="username" required>
     </div>
     <div>
-        <label for="password">Password:</label>
+        <label for="password">Password:*</label>
         <input type="password" name="password" required>
     </div>
 </fieldset>
@@ -56,5 +57,11 @@
         </select>
     </div>
 </fieldset>
+<fieldset>
+    <legend>Comment</legend>
+    <textarea name="comment" id="comment" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
+</fieldset>
+<button type="submit">Send</button>
+</form>
 </body>
 </html>
