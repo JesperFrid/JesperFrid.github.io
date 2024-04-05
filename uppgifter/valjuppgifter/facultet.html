@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="inmatningFakultet()">
+    <script>
+        function factorial(x) {
+            if (x < 0) throw new Error("x must not be negative");
+            // Annars , beräkna värde och returnera det
+            if(Number.isNaN(x) == true) throw new Error("x must a number");
+
+            var f=1;
+            for(; x > 1; f *= x, x--) /* empty */ ;  return f;
+            }
+            function inmatningFakultet()
+            {
+            try {
+            // Begära att användare mata in ett heltal
+            var n = Number(prompt("Please enter a positive integer", ""));
+            var f = factorial(n);
+            alert(n + "! = " + f);
+            document.write("<h1 style='background-color: #a1a101; text-align: center; line-height: 75px; font-size: 30px;'>Resultat: "+n + "! = " + f);
+            }
+            catch (ex) { alert(ex); // säger vad felet är
+            }
+            }
+    </script>
+</body>
+</html>
