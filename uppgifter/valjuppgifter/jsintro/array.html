@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cities = ["Dubai","Paris","Mumbai","Dallas","Houston","Madrid"];
+        for (var i=0; i<3; i++)
+        {
+            var stad = prompt("Skriv in stadens namn: ", "");
+            cities.push(stad);
+        }
+        document.write("After push <br>");
+        cities.forEach(arrayElements);
+        function arrayElements(element, index)
+        {
+            dokument.write('cities[' + index + '] = ' + element + "<br>");
+        }
+        cities.pop();
+        document.write("After pop <br>");
+        cities.forEach(arrayElements);
+        cities.shift();
+        document.write("After shift <br>");
+        cities.forEach(arrayElements);
+        var removed = cities.splice(2, 0, 'Stockholm');
+        document.write("After slice <br>");
+        cities.forEach(arrayElements);
+        delete cities[2];
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>

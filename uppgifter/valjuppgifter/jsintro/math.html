@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var tal = prompt("Mata in heltal: ", "");
+        var heltalParsed = Number.parseInt(tal, 10);
+        if(!Number.isNaN(heltalParsed))
+        {
+            document.write("Number is <b>" + heltalParsed + "<br>" + "</b>");
+            document.write("log10 is <b>" + Math.log10(heltalParsed) + "<br>" + "</b>");
+            document.write("sqrt is " + Math.sqrt(heltalParsed) + "<br>" + "</b>");
+            document.write("Value of PI is <b>" + Math.PI + "<br>" + "</b>");
+            document.write("Power to 2 is <b> " + Math.pow(heltalParsed, 2) + "<br>" + "</b>");
+            document.write("Sin is <b>" + Math.sin(heltalParsed) + "<br>" + "</b>");
+            document.write("Random between 5 and 15 <b>" + (5 + Math.random(5, 16) * 10) + "<br>" + "</b>");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
