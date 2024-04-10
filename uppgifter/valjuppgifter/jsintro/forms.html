@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button
+        {
+            background-color: rgb(88, 88, 221);
+            
+
+        }
+    </style>
+    <script>
+function exempelstring(text)
+{
+    alert(text)
+}
+
+function japan()
+{
+    alert("moshimoshi");
+}
+    </script>
+</head>
+<body>
+<form name="mainform">
+<label for="exempel">Exempel: </label>
+<input type="text" id="exempel">
+<button type="submit" onclick="exempelstring(this.form.exempel.value)">skriv ut exempelfield värde</button>
+</form>
+
+<p>Hej i olika länder</p>
+
+<button type="button" onclick="japan()">japan</button>
+
+</body>
+</html>
