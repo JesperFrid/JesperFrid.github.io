@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<b>Href: " + location.href + "</b> <br>");
+        document.write("<b>Pathname: " + location.pathname + "</b> <br>");
+        document.write("<b>Protocol: " + location.protocol + "</b>");
+
+        function switchsite()
+        {
+            location.assign("https://jesperfrid.github.io/uppgifter/valjuppgifter/links/afton.html");
+        }
+        function exchange()
+        {
+            location.replace("https://jesperfrid.github.io/uppgifter/valjuppgifter/links/afton.html");
+        }
+        function loadagain()
+        {
+            location.reload();
+        }
+    </script>
+    <style>
+        button
+        {
+            width: 12em;
+            height: 2em;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            color: rgb(187, 23, 23);
+        }
+    </style>
+</head>
+<body>
+<div><button type="button" onclick="switchsite()">Gå till - asign</button></div>
+<div><button type="button" onclick="exchange()">Gå till - replace</button></div>
+<div><button type="button" onclick="loadagain()">Ladda om - uppdatera</button></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <script>
+        function back()
+        {
+            window.history.back();
+        }
+        function forward()
+        {
+            window.history.forward();
+        }
+        function go()
+        {
+            window.history.go(2);
+        }
+        function length()
+        {
+            document.write("Lenght: " + window.history.length);
+        }
+    </script>
+    <style>
+        div
+        {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+<div><button type="button" onclick="back()">Tillbaka</button></div>
+<div><button type="button" onclick="forward()">Framåt</button></div>
+<div><button type="button" onclick="go()">Gå</button></div>
+<div><button type="button" onclick="length()">Längd</button></div>
+</body>
+</html>

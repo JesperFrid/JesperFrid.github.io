@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box
+        {
+            background-color: yellow;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        div
+        {
+            margin-bottom: 2em;
+        }
+    </style>
+    <script>
+        var myinterval;
+        var xpos = 0;
+
+        function interval()
+        {
+            var boxposition = document.getElementById("box");
+            setInterval(function(){
+            xpos += 15;
+            boxposition.style.left = xpos + "px";
+            }, 1000);
+        }
+
+    </script>
+</head>
+<body>
+<div><button type="button" onclick="interval()">Set interval</button></div>
+<div><button type="button">Set timeout</button></div>
+<div><button type="button">Clear timeout</button></div>
+<div><button type="button">Clear interval</button></div>
+<div id="box"></div>
+</body>
+</html>

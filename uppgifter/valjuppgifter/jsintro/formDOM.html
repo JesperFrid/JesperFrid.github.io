@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function reset()
+        {
+            document.getElementById(b).style.backgroundColor = white;
+        }
+
+        function colorshift(form1)
+        {
+            for (var i=0; i < form1.color.length; i++)
+            {
+                if (form1.color[i].checked)
+                {
+                    document.getElementById("b").style.backgroundColor = form1.color[i].value;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body id="b">
+    <form name="form1">
+        <div>
+            <input type="radio" name="color" id="green" value="green">
+            <label for="green">Grön</label>
+        </div>
+
+        <div>
+            <input type="radio" name="color" id="redgreen" value="rgb(228, 224, 16)">
+            <label for="redgreen">Rödgrön</label>
+        </div>
+
+        <div>
+            <input type="radio" name="color" id="aquamarine" value="aquamarine">
+            <label for="aquamarine">Akvamarin - nästan gröndblå</label>
+        </div>
+
+        <div>
+            <input type="radio" name="color" id="blue" value="blue">
+            <label for="blue">Blå</label>
+        </div>
+
+        <div>
+            <input type="radio" name="color" id="redblue" value="#842593">
+            <label for="redblue">Rödblå</label>
+        </div>
+        <button type="button" onclick="colorshift(this.form)">Välj Färg</button>
+        <button type="submit" onclick="reset()">Återställ</button>
+    </form>
+</body>
+
+</html>

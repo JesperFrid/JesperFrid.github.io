@@ -15,12 +15,24 @@
     <script>
 function exempelstring(text)
 {
-    alert(text)
+    alert(text);
 }
 
-function japan()
+function greetings(language)
 {
-    alert("moshimoshi");
+    var speech = language;
+    if(speech == "japan")
+    {
+        alert("Kon'nichiwa");
+    }
+    else if (speech == "english")
+    {
+        alert("Hello");
+    }
+    else
+    {
+        alert("Privet");
+    }
 }
     </script>
 </head>
@@ -33,7 +45,9 @@ function japan()
 
 <p>Hej i olika länder</p>
 
-<button type="button" onclick="japan()">japan</button>
+<button type="button" onclick="greetings(japan)">japan</button>
+<button type="button" onclick="greetings(english)">english</button>
+<button type="button" onclick="greetings(russian)">russian</button>
 
 </body>
 </html>
