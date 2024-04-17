@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            margin-top: 5em;
+            margin-left: 5em;
+            margin-bottom: 6em;
+        }
+    </style>
+    <script>
+        function calculate(method)
+        {
+            if(method == 'plus')
+            {
+                var answer = Number(document.getElementById("tal1").value) + Number(document.getElementById("tal2").value);
+                alert(answer);
+            }
+            else if(method == 'minus')
+            {
+
+            }
+            else if(method == 'multiply')
+            {
+                
+            }
+            else
+            {
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label for="tal1">Tal 1:</label>
+        <input type="text" name="tal1" id="tal1">
+    </div>
+    <div>
+        <label for="tal2">Tal 2:</label>
+        <input type="text" name="tal2" id="tal2">
+    </div>
+<button type="button" onclick="calculate('plus')">+</button>
+<button type="button" onclick="calculate('minus')">-</button>
+<button type="button" onclick="calculate('multiply')">*</button>
+<button type="button" onclick="calculate('divide')">/</button>
+</body>
+</html>

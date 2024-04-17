@@ -1,0 +1,57 @@
+body
+{
+    background-color: #deff9c;
+}
+table
+{
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 5px 5px black;
+    height: 1em;
+    width: 10em;
+    text-align: center;
+    border-collapse: collapse;
+}
+td
+{
+    border: 1px solid blue;
+}
+thead
+{
+    color: red;
+}
+tfoot
+{
+    color: green;
+}
+.formandtabel
+{
+    float: left;
+    margin-right: 5em;
+    margin-top: 5em;
+    margin-left: 5em;
+}
+div
+{
+    margin-bottom: 1em;
+}
+input
+{
+    float: right;
+}
+button
+{
+    align-self: center;
+    margin-left: 10em;
+    margin-top: 2em;
+    width: 7em;
+}
+fieldset
+{
+    width: 20em;
+}
+legend
+{
+    background-color: lightgreen;
+    width: 10em;
+}

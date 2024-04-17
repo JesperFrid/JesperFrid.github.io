@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button
+        {
+            display: block;
+            margin-bottom: 2em;
+        }
+    </style>
+    <script>
+        var popupwindow;
+        function openwindow()
+        {
+            popupwindow = window.open("Sigge.png","_blank","width=800, height=500");
+            popupwindow.focus();
+        }
+        function closewindow()
+        {
+            popupwindow.window.close();
+        }
+        function windowinfo()
+        {
+            document.getElementById("info").innerHTML = "popup window height: " + popupwindow.outerHeight + "<br>" + "popup window width: " + popupwindow.outerWidth + "<br>" + "window height: " + window.outerHeight + "<br>" + "window width: " + window.outerWidth;
+        }
+    </script>
+</head>
+<body>
+<button type="button" onclick="openwindow()">Öppna popup fönster</button>
+<button type="button" onclick="closewindow()">Stäng popup fönstret</button>
+<button type="button" onclick="windowinfo()">Info om "parent" fönster</button>
+<div id="info"></div>
+</body>
+</html>

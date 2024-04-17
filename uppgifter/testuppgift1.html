@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testuppgift1style.css" type="text/css">
+</head>
+
+<body>
+    <div class="formandtabel">
+        <h1><strong>Formula 1</strong></h1>
+        <table>
+            <caption>2023 driver standings</caption>
+            <thead>
+                <tr>
+                    <td>Pos</td>
+                    <td>Driver</td>
+                    <td>Nationality</td>
+                    <td>Car</td>
+                    <td>PTS</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Verstappen</td>
+                    <td>NED</td>
+                    <td>Red bull</td>
+                    <td>549</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Perez</td>
+                    <td>MEX</td>
+                    <td>Red bull</td>
+                    <td>273</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hamilton</td>
+                    <td>GBR</td>
+                    <td>Mercedes</td>
+                    <td>232</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sainz</td>
+                    <td>ESP</td>
+                    <td>Ferrari</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Alonso</td>
+                    <td>ESP</td>
+                    <td>Aston Martin</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Norris</td>
+                    <td>GBR</td>
+                    <td>McLaren</td>
+                    <td>195</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total 6 drivers</td>
+                    <td>Total: 1649</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="formandtabel">
+        <form>
+            <fieldset>
+                <legend>Name of driver</legend>
+                <div>
+                    <label for="firstname">First name:* </label>
+                    <input type="text" name="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname">Last name:*</label>
+                    <input type="text" name="lastname" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Car*</legend>
+                <div>
+                    <label for="cartype">Red bull</label>
+                    <input type="radio" name="cartype" value="Red bull">
+                </div>
+                <div>
+                    <label for="cartype">Mercedes</label>
+                    <input type="radio" name="cartype" value="Mercedes">
+                </div>
+                <div>
+                    <label for="cartype">Ferrari</label>
+                    <input type="radio" name="cartype" value="Ferrari">
+                </div>
+                <div>
+                    <label for="cartype">Aston Martin</label>
+                    <input type="radio" name="cartype" value="Aston Martin">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Nationality</legend>
+                <label for="nationality">Choose a nationality</label>
+                <select name="nationality" id="nationality">
+                    <option value="NED">NED</option>
+                    <option value="MEX">MEX</option>
+                    <option value="GBR">GBR</option>
+                    <option value="ESP">ESP</option>
+                </select>
+            </fieldset>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>

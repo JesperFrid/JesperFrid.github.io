@@ -20,6 +20,7 @@ function exempelstring(text)
 
 function greetings(language)
 {
+    console.log(language);
     var speech = language;
     if(speech == "japan")
     {
@@ -45,9 +46,9 @@ function greetings(language)
 
 <p>Hej i olika länder</p>
 
-<button type="button" onclick="greetings(japan)">japan</button>
-<button type="button" onclick="greetings(english)">english</button>
-<button type="button" onclick="greetings(russian)">russian</button>
+<button type="button" onclick="greetings('japan')">japan</button>
+<button type="button" onclick="greetings('english')">english</button>
+<button type="button" onclick="greetings('russian')">russian</button>
 
 </body>
 </html>
