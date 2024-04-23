@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body
+{
+    background-color: rgb(114,188,227);
+}
+.tablebig
+{
+    border-style: solid;
+    border-color: black;
+    height: 10em;
+    width: 35em;
+    text-align: center;
+    border-collapse: collapse;
+}
+.bigtd
+{
+    border: 1px solid green;
+    height: 10em;
+}
+td
+{
+    border: 1px solid green;
+}
+.tablenested
+{
+    border-style: solid;
+    border-color: green;
+    height: 10em;
+    width: 12em;
+    text-align: center;
+    border-collapse: collapse;
+}
+.bigtfoot
+{
+    color: yellow;
+}
+.months
+{
+    color: purple;
+}
+.totalnested
+{
+    color: blue;
+}
+.nestedthead
+{
+    color: red;
+}
+fieldset
+{
+    width: 30em;
+}
+legend
+{
+    background-color: #daa9e2;
+    color: purple;
+    width: 10em;
+}
+form input
+{
+    float: right;
+}
+div
+{
+    margin: 1em;
+}
+button
+{
+    margin-left: 15em;
+    margin-top: 1em;
+}
+.tableandform
+{
+    float: left;
+}
+    </style>
+</head>
+<body>
+    <div class="tableandform">
+    <h1>Nästlad tabell</h1>
+    <table class="tablebig">
+        <caption>Fruit/month</caption>
+        <thead>
+            <tr class="months">
+                <td>January</td>
+                <td>February</td>
+                <td>March</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bigtd">
+                    <table class="tablenested">
+                        <thead>
+                            <tr class="nestedthead">
+                                <td>S.N</td>
+                                <td>Item</td>
+                                <td>Quantity</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mango</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Orange</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="totalnested">
+                                <td colspan="2">Total</td>
+                                <td>10</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+                <td class="bigtd">
+                    <table class="tablenested">
+                        <thead>
+                            <tr class="nestedthead">
+                                <td>S.N</td>
+                                <td>Item</td>
+                                <td>Quantity</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Apple</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mango</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Orange</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="totalnested">
+                                <td colspan="2">Total</td>
+                                <td>5</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+                <td class="bigtd">
+                    <table class="tablenested">
+                        <thead>
+                            <tr class="nestedthead">
+                                <td>S.N</td>
+                                <td>Item</td>
+                                <td>Quantity</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Apple</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mango</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Orange</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="totalnested">
+                                <td colspan="2">Total</td>
+                                <td>10</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot class="bigtfoot">
+            <tr>
+                <td colspan="2">Total</td>
+                <td>25</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+    <div class="tableandform">
+<form>
+<fieldset>
+    <legend>Login</legend>
+    <div>
+        <label for="username">Username:*</label>
+        <input type="text" name="username" id="username" required>
+    </div>
+    <div>
+        <label for="password">Password:*</label>
+        <input type="password" name="password" id="password" required>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Gender*</legend>
+    <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+    </div>
+    <div>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Programming Skill</legend>
+    <div>
+        <label for="java">Java</label>
+        <input type="checkbox" name="java" id="java">
+    </div>
+    <div>
+        <label for="cplusplus">C++</label>
+        <input type="checkbox" name="cplusplus" id="cplusplus">
+    </div>
+    <div>
+        <label for="csharp">C#</label>
+        <input type="checkbox" name="csharp" id="csharp">
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Fruit</legend>
+    <div>
+        <label for="fruit">Choose a fruit:</label>
+        <select name="fruit" id="fruit">
+            <option value="banana">Banana</option>
+            <option value="apple">Apple</option>
+            <option value="orange">Pear</option>
+        </select>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Comment</legend>
+    <textarea name="comment" id="comment" cols="50" rows="10" placeholder="Enter your comment here..."></textarea>
+</fieldset>
+<button type="submit">Send</button>
+</form>
+    </div>
+</body>
+</html>

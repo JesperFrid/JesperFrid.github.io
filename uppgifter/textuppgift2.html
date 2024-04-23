@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Four operations</title>
     <style>
-        div
-        {
+        div {
             margin-top: 5em;
             margin-left: 5em;
             margin-bottom: 6em;
         }
+
+        button {
+            width: 5em;
+            height: 2em;
+            margin-left: 3em;
+            background-color: lightblue;
+        }
+        #result
+        {
+            float: right;
+            position: absolute;
+            display: inline;
+            left: 30em;
+            top: 9.5em;
+        }
     </style>
     <script>
-        function calculate(method)
-        {
-            if(method == 'plus')
-            {
+        function calculate(method) {
+            if (method == 'plus') {
                 var answer = Number(document.getElementById("tal1").value) + Number(document.getElementById("tal2").value);
-                alert(answer);
+                document.getElementById("result").innerHTML = "The answers is " + answer;
             }
-            else if(method == 'minus')
-            {
-
+            else if (method == 'minus') {
+                var answer = Number(document.getElementById('tal1').value) - Number(document.getElementById('tal2').value);
+                document.getElementById("result").innerHTML = "The answers is " + answer;
             }
-            else if(method == 'multiply')
-            {
-                
+            else if (method == 'multiply') {
+                var answer = Number(document.getElementById('tal1').value) * Number(document.getElementById("tal2").value);
+                document.getElementById("result").innerHTML = "The answers is " + Math.floor(answer);
             }
-            else
-            {
-                
+            else {
+                var answer = Number(document.getElementById('tal1').value) / Number(document.getElementById("tal2").value);
+                document.getElementById("result").innerHTML = "The answers is " + Math.floor(answer);
             }
         }
     </script>
 </head>
+
 <body>
     <div>
-        <label for="tal1">Tal 1:</label>
-        <input type="text" name="tal1" id="tal1">
+        <div>
+            <label for="tal1">Tal 1:</label>
+            <input type="text" name="tal1" id="tal1">
+        </div>
+        <div>
+            <label for="tal2">Tal 2:</label>
+            <input type="text" name="tal2" id="tal2">
+        </div>
+        <div>
+            <button type="button" onclick="calculate('plus')">+</button>
+            <button type="button" onclick="calculate('minus')">-</button>
+            <button type="button" onclick="calculate('multiply')">*</button>
+            <button type="button" onclick="calculate('divide')">/</button>
+        </div>
     </div>
-    <div>
-        <label for="tal2">Tal 2:</label>
-        <input type="text" name="tal2" id="tal2">
-    </div>
-<button type="button" onclick="calculate('plus')">+</button>
-<button type="button" onclick="calculate('minus')">-</button>
-<button type="button" onclick="calculate('multiply')">*</button>
-<button type="button" onclick="calculate('divide')">/</button>
+    <span id="result"></span>
+
 </body>
+
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+    <script>
+        var cities = [];
+        function skrivut()
+        {
+                document.getElementById("utskrivning").innerHTML = "";
+                cities.forEach(arrayElements);
+                function arrayElements(element, index)
+                {
+                document.getElementById("utskrivning").innerHTML = document.getElementById("utskrivning").innerHTML + 'cities[' + index + '] = ' + element + "<br>";
+                }
+        }
+        function poparray()
+        {
+            try
+            {
+                if(cities.length == 0) throw "Array must have at least one element";
+                cities.pop();
+            }
+            
+            catch(err)
+            {
+                alert(err);
+            }
+        }
+        function splicearray()
+        {
+            try
+            {
+                if(cities.length < 4) throw "Array must have at least 4 elements";
+                cities.splice(4, 0, 'Stockholm')
+            }
+
+            catch(err)
+            {
+                alert(err);
+            }
+        }
+        function pusharray()
+        {
+            try
+            {
+                if(document.getElementById('stad').value == "") throw "Cannot submit empty element"
+                cities.push(document.getElementById('stad').value);
+            }
+            
+            catch(err)
+            {
+                alert(err);
+            }
+        }
+    </script>
+</head>
+<body>
+<div>
+    <label for="stad">Stad: </label>
+    <input type="text" id="stad">
+</div>
+<p>Push,pop,write,splice - Array</p>
+<button type="button" onclick="skrivut()">Skriv ut array</button>
+<button type="button" onclick="poparray()">Pop</button>
+<button type="button" onclick="pusharray()">Push</button>
+<button type="button" onclick="splicearray()">Splice</button>
+<div id="utskrivning"></div>
+</body>
+</html>
