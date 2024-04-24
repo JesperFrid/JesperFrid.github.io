@@ -7,32 +7,32 @@
     <style>
         .container
         {
-            justify-content: center;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
         }
         .container > div
         {
-            display: flex;
-            flex-wrap: wrap;
             border-color: black;
             border-style: solid;
-            text-align: center;
             background-color: yellow;
             color: white;
             font-size: 5em;
-            justify-content: center;
-            flex-basis: 50px;
+            
         }
         .odd
         {
-            flex: 10%;
+            flex:1 10%;
         }
         .even
         {
-            flex: 20%;
+            flex:1 20%;
         }
         .second, .fifth, .eight
         {
-            flex: 40%;
+            flex:1 40%;
         }
     </style>
 </head>
