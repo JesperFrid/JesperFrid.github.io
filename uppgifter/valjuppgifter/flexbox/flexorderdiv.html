@@ -9,14 +9,10 @@
         div
         {
             display: flex;
-            border-style: solid;
-            border-color: black;
         }
         .header
         {
             display: flex;
-            border-color: black;
-            border-style: solid;
             line-height: 2em;
             height: 2em;
             justify-content: center;
@@ -31,30 +27,35 @@
         .article
         {
             order: 2;
-            border-style: solid;
-            border-color: black;
             display: block;
             text-align: center;
+            background-color: aqua;
+            flex: 3 1 0px;
         }
         #news
         {
             order: 1;
             align-items: center;
-
+            text-align: center;
+            background-color: pink;
+            flex: 1 1 0px;
+            justify-content: center;
         }
         #contact
         {
             order: 3;
             align-items: end;
+            background-color: pink;
+            flex: 1 1 0px;
+            justify-content: center;
         }
         .footer
         {
-            border-style: solid;
-            border-color: black;
             margin: 0px;
             line-height: 5em;
             height: 5em;
             text-align: right;
+            background-color: blueviolet;
         }
     </style>
 </head>
@@ -64,11 +65,11 @@
     <div class="head">
         <div class="article">
             <h2>Where It's At</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget tristique elit. Etiam euismod dictum
+            <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget tristique elit. Etiam euismod dictum
                 lectus, ut efficitur diam tristique facilisis. Cras sem tortor, dignissim at massa ut,fermentum molestie
                 ligula. Mauris purus nisi, lacinia ac sem id, pretium sagittis mi. Nunc ultricies odio id ipsum
                 bibendum, non posuere nisl consequat. Aliquam non pellentesque velit. Quisque sit amet pretium odio.
-                In convallis quis lectus non laoreet. Integer non erat quis eros elementum ultricies quis in tellus.
+                In convallis quis lectus non laoreet. Integer non erat quis eros elementum ultricies quis in tellus.</em>
             </p>
         </div>
         <div id="news">
