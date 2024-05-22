@@ -8,78 +8,122 @@
     <link rel="icon" type="image/x-icon" href="../img/ukFavicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/provstyle.css">
     <script src="https://kit.fontawesome.com/a1c4cb9ede.js" crossorigin="anonymous"></script>
+    <script>
+        function glow()
+        {
+            document.getElementById("home").style.backgroundColor = yellow;
+            document.getElementById("about").style.backgroundColor = red;
+            document.getElementById("services").style.backgroundColor = red;
+            document.getElementById("contact").style.backgroundColor = red;
+        }
+    </script>
     <style>
         body
         {
             background-color: #225599;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .headerlinks > a
+        .headerlinks > div
         {
             box-shadow: 0.2em 0.2em #07dd72;
             background-color: #dddddd;
             flex: 5 1 auto;
-            margin: 1em 2em;
+            margin: 0 0.5em;
+            line-height: 3em;
+            height: 3em;
+            text-align: center;
+            text-decoration: none;
+        }
+        #space
+        {
+            flex: 5 1 auto;
+            margin: 0 0.5em;
+            background-color: transparent;
+            box-shadow: none;
         }
         .headerlinks
         {
             display: flex;
             flex-direction: row;
-
+            margin: 2em 0 2.5em 0;
         }
         .imagelink
         {
             box-shadow: 0.2em 0.2em #07b11f;
+            display: flex;
+            margin-bottom: 2.5em;
         }
         #businessweb
         {
             background-color: #dddddd;
+            flex: 3 1;
+        }
+        .main
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img
+        {
+            flex: 1 1;
         }
         .amds > div
         {
             box-shadow: 0.2em 0.2em #d3111f;
             background-color: #dddddd;
+            
         }
         fieldset
         {
             box-shadow: 0.2em 0.2em #076430;
             background-color: #dddddd;
         }
+        .divitis
+        {
+            text-align: left;
+        }
     </style>
 </head>
 
 <body>
     <div class="headerlinks">
-        <a href="" id="home">HOME</a>
-        <a href="" id="about">ABOUT</a>
-        <a href="" id="services">SERVICES</a>
-        <a href="" id="contact">CONTACT</a>
+        <div id="home"><a href="">HOME</a></div>
+        <div id="space"></div>
+        <div id="about"><a href="">ABOUT</a></div>
+        <div id="services"><a href="">SERVICES</a></div>
+        <div id="contact"><a href="">CONTACT</a></div>
     </div>
     <div class="imagelink">
         <img src="../img/pic1.jpg" alt="chalkboard with lightbulb in the middle">
         <div id="businessweb">
-            <h1>Your Business On the Web</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <a href="">Read more</a>
+            <div class="main">
+                <div class="divitis">
+                    <h1>Your Business On the Web</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <a href="">Read more</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="amds">
         <div class="analytics">
-            <i class="fa-solid fa-chart-column" style="color: #005eff;"></i>
+            <i class="fa-solid fa-chart-column fa-4x" style="color: #005eff; "></i>
             <h1>Analytics</h1>
             <p>Lorem ipsum, consectetur elit.</p>
         </div>
         <div class="marketing">
-            <i class="fa-solid fa-bullhorn"></i>
+            <i class="fa-solid fa-bullhorn fa-4x"></i>
             <h1>Marketing</h1>
             <p>Lorem ipsum, dolor elit.</p>
         </div>
         <div class="development">
-            <i class="fa-solid fa-server" style="color: #ff0000;"></i>
+            <i class="fa-solid fa-server fa-4x" style="color: #ff0000;"></i>
             <h1>Development</h1>
             <p>Lorem ipsum consectetur.</p>
         </div>
         <div class="support">
-            <i class="fa-regular fa-address-card" style="color: #44ff00;"></i>
+            <i class="fa-regular fa-address-card fa-4x" style="color: #44ff00;"></i>
             <h1>Support</h1>
             <p>Lorem ipsum. Beatae, quia?</p>
         </div>
