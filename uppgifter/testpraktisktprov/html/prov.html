@@ -9,8 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/provstyle.css">
     <script src="https://kit.fontawesome.com/a1c4cb9ede.js" crossorigin="anonymous"></script>
     <script>
-        function glow()
-        {
+        function glow() {
             document.getElementById("home").style.backgroundColor = yellow;
             document.getElementById("about").style.backgroundColor = red;
             document.getElementById("services").style.backgroundColor = red;
@@ -18,13 +17,12 @@
         }
     </script>
     <style>
-        body
-        {
+        body {
             background-color: #225599;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .headerlinks > div
-        {
+
+        .headerlinks>div {
             box-shadow: 0.2em 0.2em #07dd72;
             background-color: #dddddd;
             flex: 5 1 auto;
@@ -34,53 +32,65 @@
             text-align: center;
             text-decoration: none;
         }
-        #space
-        {
+
+        #space {
             flex: 5 1 auto;
             margin: 0 0.5em;
             background-color: transparent;
             box-shadow: none;
         }
-        .headerlinks
-        {
+
+        .headerlinks {
             display: flex;
             flex-direction: row;
             margin: 2em 0 2.5em 0;
         }
-        .imagelink
-        {
+
+        .imagelink {
             box-shadow: 0.2em 0.2em #07b11f;
             display: flex;
             margin-bottom: 2.5em;
         }
-        #businessweb
-        {
+
+        #businessweb {
             background-color: #dddddd;
             flex: 3 1;
         }
-        .main
-        {
+
+        .main {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        img
-        {
+
+        img {
             flex: 1 1;
         }
-        .amds > div
-        {
+
+        .amds {
+            display: flex;
+        }
+
+        .amds>div {
             box-shadow: 0.2em 0.2em #d3111f;
             background-color: #dddddd;
-            
+            flex: 1 1 auto;
+            text-align: center;
         }
-        fieldset
+        fieldset 
         {
             box-shadow: 0.2em 0.2em #076430;
             background-color: #dddddd;
+            flex-direction: column;
+            width: 10em;
+            height: 10em;
         }
-        .divitis
+        form
         {
+            display: flex;
+            justify-content: center;
+        }
+        .divitis {
             text-align: left;
         }
     </style>
@@ -130,28 +140,38 @@
     </div>
     <div class="forms">
         <form>
-        <div>
-            <fieldset>
-                <legend>Gender*</legend>
-                <label for="gender">Male</label>
-                <input type="radio" id="gender" value="male" required>
-                <label for="gender">Female</label>
-                <input type="radio" id="gender" value="female" required>
-            </fieldset>
-        </div>
-        <div>
-            <fieldset>
-                <legend>Programming <br>Skill</legend>
-                <label for="skill">Java</label>
-                <input type="checkbox" id="java" name="skill">
-                <label for="skill">C++</label>
-                <input type="checkbox" id="cplusplus" name="skill" checked>
-                <label for="skill">C#</label>
-                <input type="checkbox" id="csharp" name="skill">
-                <button type="submit">Submit</button>
-            </fieldset>
-        </div>
-    </form>
+            <div>
+                <fieldset>
+                    <legend>Gender*</legend>
+                    <div>
+                        <label for="gender">Male</label>
+                        <input type="radio" id="gender" value="male" required>
+                    </div>
+                    <div>
+                        <label for="gender">Female</label>
+                        <input type="radio" id="gender" value="female" required>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Programming <br>Skill</legend>
+                    <div>
+                        <label for="skill">Java</label>
+                        <input type="checkbox" id="java" name="skill">
+                    </div>
+                    <div>
+                        <label for="skill">C++</label>
+                        <input type="checkbox" id="cplusplus" name="skill" checked>
+                    </div>
+                    <div>
+                        <label for="skill">C#</label>
+                        <input type="checkbox" id="csharp" name="skill">
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </div>
+        </form>
     </div>
 </body>
 
