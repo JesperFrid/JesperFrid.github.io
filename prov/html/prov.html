@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Business</title>
+    <link rel="icon" type="image/x-icon" href="../img/usaFavicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/provstyle.css">
+    <link rel="" href="">
+    <script src="https://kit.fontawesome.com/a1c4cb9ede.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../javascript/provscript.js"></script>
+</head>
+
+<body>
+    <div class="headerlinks">
+        <div id="homenews">
+            <div id="home"><a href="">HOME</a></div>
+            <div id="news"><a href="">NEWS</a></div>
+        </div>
+        <div id="space"></div>
+        <div id="about">
+            <div><a href="">ABOUT</a></div>
+        </div>
+        <div id="services">
+            <div><a href="">SERVICES</a></div>
+        </div>
+        <div id="contact">
+            <div><a href="">CONTACT</a></div>
+        </div>
+    </div>
+    <div class="imagelink">
+        <img src="../img/pic1.jpg" alt="chalkboard with lightbulb in the middle" onclick="backcolor()">
+        <div id="businessweb">
+            <div class="main">
+                <div class="divitis">
+                    <h1 id="title">Your Business On the Web</h1>
+                    <p id="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div id="readmore"><a href="" id="read">Read more</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="amds">
+        <div class="analytics">
+            <i class="fa-solid fa-chart-pie fa-2x" style="color: #FFD43B;"></i>
+            <h2>Analytics</h1>
+                <p>Lorem ipsum, consectetur elit.</p>
+        </div>
+        <div class="marketing">
+            <i class="fa-solid fa-rectangle-ad fa-rotate-270 fa-2x" style="color: #f60909;"></i>
+            <h2>Marketing</h1>
+                <p>Lorem ipsum, dolor elit.</p>
+        </div>
+        <div class="development">
+            <i class="fa-regular fa-window-maximize fa-2x" style="color: #1b6af3;"></i>
+            <h2>Development</h1>
+                <p>Lorem ipsum consectetur.</p>
+        </div>
+        <div class="support">
+            <i class="fa-solid fa-phone fa-2x" style="color: #06f94f;"></i>
+            <h2>Support</h1>
+                <p>Lorem ipsum. Beatae, quia?</p>
+        </div>
+    </div>
+    <div class="forms">
+        <form>
+            <div class="field" id="field1">
+                <fieldset>
+                    <legend>Your name</legend>
+                    <div>
+                        <label for="firstname">First name:*</label>
+                        <input type="text" id="firstname" required>
+                    </div>
+                    <div>
+                        <label for="lastname">Last name:*</label>
+                        <input type="text" id="lastname" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Nationality</legend>
+                    <div>
+                        <label for="nationality">Choose a nationality:</label>
+                        <select name="nationality" id="nationality">
+                            <option value="sweden">SWE</option>
+                            <option value="netherlands" selected>NED</option>
+                            <option value="usa">USA</option>
+                            <option value="unitedkingdom">GBR</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="field" id="field2">
+                <fieldset>
+                    <legend>Programming <br>Skills</legend>
+                    <div>
+                        <label for="skill">Electrician</label>
+                        <input type="checkbox" id="electrician" name="skill">
+                    </div>
+                    <div>
+                        <label for="skill">Baker</label>
+                        <input type="checkbox" id="baker" name="skill" checked>
+                    </div>
+                    <div>
+                        <label for="skill">Carpenter</label>
+                        <input type="checkbox" id="carpenter" name="skill">
+                    </div>
+                </fieldset>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
